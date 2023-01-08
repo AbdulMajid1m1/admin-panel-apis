@@ -9,9 +9,9 @@ cloudinary.config({
     api_secret: "d7FOpvaEzC9D0XmKY_pGqzGTUm4",
 });
 // get all products
-// router.get("/", async (req, res) => {
-//     res.send("Hello");
-// });
+router.get("/", async (req, res) => {
+    res.send("Hello");
+});
 router.get("/get-all-products", async (req, res) => {
     try {
         const products = await Product.find();
